@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Тестовое Recruto</title>
+</head>
+<body>
+    {% if name %}
+        Hello {{name}}!
+    {% endif %}
+    {% if message %}
+        {{message}}!
+    {% endif %}
+    
+    {% if not name and not message%}
+        Введите в поисковую строку запрос вида
+        <br>xx.xx.xx.xx/?name=SLOVO&message=SLOVO</br>
+    {% endif %}
+</body>
+</html>

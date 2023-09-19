@@ -1,0 +1,38 @@
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+
+    background: linear-gradient(45deg, #44A08D, #093637);
+    background-size: 400%, 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@media (max-width: 900px) {
+    body{
+        font-size: 40px;}
+}
+
+@media (max-width: 600px) {
+    body{
+        font-size: 25px;}
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%, 50%;
+    }
+    50% {
+        background-position: 100%, 50%;
+    }
+    100% {
+        background-position: 0%, 50%;
+    }
+}
